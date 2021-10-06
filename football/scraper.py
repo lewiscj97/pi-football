@@ -10,6 +10,7 @@ class Scraper:
         options.headless = True
         self.link = "https://www.bbc.co.uk/sport/football/scores-fixtures"
         self.browser = webdriver.Chrome(options=options, executable_path='/usr/lib/chromium-browser/chromedriver')
+        # self.browser = webdriver.Chrome(options=options, executable_path='/Users/lewis.jones/PycharmProjects/pi-football/chromedriver')
         self.matches = []
         self.home_teams = []
         self.away_teams = []

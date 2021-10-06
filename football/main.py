@@ -1,5 +1,5 @@
 from scraper import Scraper
-from displayer import DisplayText
+
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
@@ -8,5 +8,4 @@ if __name__ == '__main__':
     matches = scraper.matches
 
     displayer = DisplayText()
-    print(matches[0])
-    # displayer.display(matches[0].to_array)
+    displayer.display(matches[0].to_array())
