@@ -18,16 +18,20 @@ class DisplayText:
 
         for line in message:
             w = self.font.getsize(line)[0]
-            x = (self.inky_display.WIDTH / 2) - (w / 2)
+            #x = (self.inky_display.WIDTH / 2) - (w / 2)
+            x = 10
             y = h
             h += 31
             self.draw.text((x,y), line, self.inky_display.BLACK, self.font)
+
+        logo = "PiBall"
+        self.draw.text((160 ,43), logo, self.inky_display.RED, self.font)
 
     def display(self, message):
         self.create_drawing(message)
         self.inky_display.set_image(self.img)
         self.inky_display.show()
 
-# new = DisplayText()
-#
-# new.display(["Manchester United", "2 - 1", "Tottenham Hotspur"])
+#new = DisplayText()
+
+#new.display(["Manchester United: 2", "45 mins", "Tottenham Hotspur: 1"])
