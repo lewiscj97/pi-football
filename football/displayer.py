@@ -29,4 +29,5 @@ class DisplayText:
         self.inky_display.show()
 
 new = DisplayText()
+
 new.display(["Manchester United", "2 - 1", "Tottenham Hotspur"])
