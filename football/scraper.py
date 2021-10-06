@@ -1,12 +1,16 @@
 from bs4 import BeautifulSoup
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 import time
 from match import Match
 
 class Scraper:
     def __init__(self):
+        options = Options()
+        options.headless = True
         self.link = "https://www.bbc.co.uk/sport/football/scores-fixtures"
-        self.browser = webdriver.Chrome('/Users/lewis.jones/PycharmProjects/pi-football/chromedriver')
+        self.browser = webdriver
+        self.browser = webdriver.Chrome(options=options, executable_path='/Users/lewis.jones/PycharmProjects/pi-football/chromedriver')
         self.matches = []
         self.home_teams = []
         self.away_teams = []
