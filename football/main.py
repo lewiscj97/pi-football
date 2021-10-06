@@ -8,4 +8,5 @@ if __name__ == '__main__':
     matches = scraper.matches
 
     displayer = DisplayText()
-    displayer.display(matches[0].to_array)
+    print(matches[0])
+    # displayer.display(matches[0].to_array)
