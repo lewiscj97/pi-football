@@ -28,6 +28,6 @@ class DisplayText:
         self.inky_display.set_image(self.img)
         self.inky_display.show()
 
-new = DisplayText()
-
-new.display(["Manchester United", "2 - 1", "Tottenham Hotspur"])
+# new = DisplayText()
+#
+# new.display(["Manchester United", "2 - 1", "Tottenham Hotspur"])

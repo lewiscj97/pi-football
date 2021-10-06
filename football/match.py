@@ -8,3 +8,6 @@ class Match:
 
     def to_string(self):
         print(f'{self.home_team} {self.home_score} {self.time} {self.away_score} {self.away_team}')
+
+    def to_array(self):
+        return [str(self.home_team), f'{self.home_score} - {self.time} - {self.away_score}', str(self.away_team) ]
