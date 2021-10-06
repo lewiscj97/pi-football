@@ -100,7 +100,7 @@ class Scraper:
             self.times.append(time[0].text)
 
     def create_matches(self):
-        for i in range(2):
+        for i in range(len(self.home_teams)):
             home_team = self.home_teams[i]
             away_team = self.away_teams[i]
             home_score = self.home_scores[i]
@@ -111,7 +111,7 @@ class Scraper:
     def main(self):
         soup = self.open_pages()
         blocks = self.get_match_blocks(soup)
-        block = self.identify_league_block(blocks, "Women's Champions League")
+        block = self.identify_league_block(blocks, "UEFA Nations League")
         matches = self.find_all_matches(block)
         self.find_team_names(matches)
         self.get_scores(matches)

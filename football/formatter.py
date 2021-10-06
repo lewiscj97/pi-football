@@ -7,6 +7,6 @@ class Formatter:
         scraper.main()
         self.matches = scraper.matches
 
-
-for match in Formatter().matches:
+formatter = Formatter()
+for match in formatter.matches:
     match.to_string()
