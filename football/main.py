@@ -9,4 +9,4 @@ if __name__ == '__main__':
 
     displayer = DisplayText()
     displayer.display(matches[0].to_array())
-    matches[0].to_string
+    matches[0].to_string()
