@@ -115,7 +115,7 @@ class Scraper:
     def main(self):
         soup = self.open_pages()
         blocks = self.get_match_blocks(soup)
-        block = self.identify_league_block(blocks, "UEFA Nations League")
+        block = self.identify_league_block(blocks, "Euro U21 Qualifying")
         matches = self.find_all_matches(block)
         self.find_team_names(matches)
         self.get_scores(matches)
