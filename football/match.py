@@ -10,4 +10,4 @@ class Match:
         print(f'{self.home_team} {self.home_score} {self.time} {self.away_score} {self.away_team}')
 
     def to_array(self):
-        return [str(self.home_team), f'{self.home_score} - {self.time} - {self.away_score}', str(self.away_team) ]
+        return [f'{str(self.home_team)}: {self.home_score}', str(self.time), f'{str(self.away_team)}: {self.away_score}' ]
